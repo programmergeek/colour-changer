@@ -55,11 +55,11 @@ button.addEventListener("click", function(){
     //A random value between 0 and 1301
     var randomInt = generateRandomInt();
     console.log(randomInt)
-    document.body.style.backgroundColor = colours.colours[randomInt].hex;
-    colour.textContent = colours.colours[randomInt].name;
+    document.body.style.backgroundColor = colours[randomInt].hex;
+    colour.textContent = colours[randomInt].name;
 });
 
 function generateRandomInt(){
-    var val = Math.random() * colours.colours.length;
+    var val = Math.random() * colours.length;
     return val;
 }
