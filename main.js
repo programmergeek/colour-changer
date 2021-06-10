@@ -49,7 +49,7 @@ const colours = [
     }]
 
 const button = document.getElementById("btn");
-const colour = document.getElementById("colour");
+const colour = document.querySelector(".colour");
 
 button.addEventListener("click", function(){
     //A random value between 0 and 1301
@@ -60,6 +60,6 @@ button.addEventListener("click", function(){
 });
 
 function generateRandomInt(){
-    var val = Math.random() * colours.length;
+    var val = Math.floor(Math.random() * colours.length);
     return val;
 }
