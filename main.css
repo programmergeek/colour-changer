@@ -9,7 +9,7 @@ h1{
     background-color: black;
     color: white;
     border-radius: 10px;
-    width: max-content;
+    width: fit-content;
     max-width: 500px;
     padding: 1%;
 }
